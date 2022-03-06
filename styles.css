@@ -1,0 +1,187 @@
+:root {
+    --dark-purple: #6c63ff;
+    --light-purple: #b3a7dd;
+    --heading-font: 'Red Hat Display', sans-serif;
+    --text-font: 'Red Hat Text', sans-serif;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    background-color: var(--dark-purple);
+    position: fixed;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navList {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: var(--text-font);
+}
+
+.navLink {
+    list-style: none;
+    padding: 0 1.5rem;
+}
+
+/* hero section */
+
+.heroSection {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5.5rem 1.5rem;
+}
+
+.heroImageContainer {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage {
+    width: 500px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: var(--dark-purple);
+}
+
+h1 {
+    font-family: var(--heading-font);
+}
+
+h2,
+p {
+    font-family: var(--text-font);
+}
+
+.heroText {
+    max-width: 20rem;
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.techSection {
+    background-color: var(--light-purple);
+    padding: 2rem 1.5rem 5rem 1.5rem;
+}
+
+.techSection > h2 {
+    color: white;
+}
+
+.techText {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.techCardContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.techCard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 12rem;
+    height: 17rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease-in-out all;
+}
+
+.techCard:hover {
+    transform: scale(1.02);
+}
+
+.cardImage {
+    height: 50%;
+}
+
+/* skills */
+
+.skillsImage {
+    width: 300px;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.starIcon {
+    height: 20px;
+}
+
+.skill {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 18rem;
+}
+
+#skillsSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skillsHeading {
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .heroSection {
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+    }
+    .techCardContainer {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .skillsSection {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .heroImage {
+        width: 300px;
+    }
+    .techCard {
+        height: 14rem;
+        width: 9rem;
+    }
+}
