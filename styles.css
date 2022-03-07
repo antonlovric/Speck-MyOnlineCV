@@ -50,7 +50,7 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 5.5rem 1.5rem;
+    padding: 9.5rem 1.5rem;
 }
 
 .heroImageContainer {
@@ -62,17 +62,25 @@ a {
 }
 
 .heroImage {
-    width: 500px;
+    width: 700px;
 }
 
 h1,
 h2 {
     text-align: center;
     color: var(--dark-purple);
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
 h1 {
     font-family: var(--heading-font);
+    font-size: clamp(3.5rem, 4vw, 6rem);
+}
+
+p,
+.navLink {
+    line-height: 1.5;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
 }
 
 h2,
@@ -81,7 +89,7 @@ p {
 }
 
 .heroText {
-    max-width: 20rem;
+    max-width: 45rem;
     margin-top: 2rem;
     text-align: justify;
 }
@@ -113,8 +121,8 @@ p {
     align-items: center;
     flex-direction: column;
     background-color: white;
-    width: 12rem;
-    height: 17rem;
+    width: 20rem;
+    height: 30rem;
     border-radius: 10px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
     transition: 0.3s ease-in-out all;
@@ -131,7 +139,7 @@ p {
 /* skills */
 
 .skillsImage {
-    width: 300px;
+    width: 500px;
 }
 
 .skillsContainer {
@@ -141,20 +149,22 @@ p {
 }
 
 .starIcon {
-    height: 20px;
+    height: 30px;
 }
 
 .skill {
     display: flex;
     gap: 1rem;
     justify-content: space-between;
-    width: 18rem;
+    width: 25rem;
+    align-items: center;
 }
 
 #skillsSection {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 5rem 1.5rem;
 }
 
 .skillsHeading {
@@ -165,6 +175,9 @@ p {
     .heroSection {
         flex-direction: column-reverse;
         gap: 2.5rem;
+    }
+    .heroImage {
+        width: 500px;
     }
     .techCardContainer {
         flex-direction: column;
@@ -180,8 +193,7 @@ p {
     .heroImage {
         width: 300px;
     }
-    .techCard {
-        height: 14rem;
-        width: 9rem;
+    .skill {
+        width: 22rem;
     }
 }
