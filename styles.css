@@ -193,7 +193,14 @@ p {
     .heroImage {
         width: 300px;
     }
+    .techCard {
+        width: 15rem;
+        height: 25rem;
+    }
     .skill {
-        width: 22rem;
+        width: 21.5rem;
+    }
+    .skillsImage {
+        width: 300px;
     }
 }
