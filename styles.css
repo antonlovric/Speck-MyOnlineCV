@@ -189,16 +189,22 @@ p {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 650px) {
+    .heroSection {
+        padding: 6rem 1.5rem;
+    }
     .heroImage {
         width: 300px;
     }
     .techCard {
         width: 15rem;
-        height: 25rem;
+        height: 22rem;
     }
     .skill {
-        width: 21.5rem;
+        width: 20rem;
+    }
+    .starIcon {
+        height: 20px;
     }
     .skillsImage {
         width: 300px;
